@@ -1,0 +1,11 @@
+your_profile_name:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: 127.0.0.1
+      port: 3306
+      schema: fetch_data_analyst_take_home
+      username: root
+      password: Fpqb9L2D$J
+      ssl_disabled: True
