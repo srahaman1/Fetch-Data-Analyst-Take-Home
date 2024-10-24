@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "cloud.getdbt.com"
+  active-project: "269224"
+projects:
+  - project-name: "Analytics"
+    project-id: "269224"
+    account-name: "Rapid7"
+    account-id: "184038"
+    account-host: "cloud.getdbt.com"
+    token-name: "cloud-cli-a20f"
+    token-value: "dbtu_6EfjX0Mhc8o3TTznve9LmAzuC3DTmj29V10p1VyGp1HQ4T8Q6s"
+
+
