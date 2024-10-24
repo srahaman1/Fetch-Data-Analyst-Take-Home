@@ -1,0 +1,66 @@
+[0m16:04:59.333598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275057E6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275056DF9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027504A88980>]}
+
+
+============================== 16:04:59.338594 | 127fc557-41eb-43d2-a1aa-575fa2c5b61a ==============================
+[0m16:04:59.338594 [info ] [MainThread]: Running with dbt=1.7.18
+[0m16:04:59.339615 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Graduate\\.dbt', 'log_path': 'C:\\Users\\Graduate\\Documents\\Fetch-DA-Take-Home\\Fetch-Data-Analyst-Take-Home\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:04:59.806625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275057CB290>]}
+[0m16:04:59.916185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027505E142F0>]}
+[0m16:04:59.924157 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m16:04:59.944234 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m16:04:59.947239 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:04:59.948237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027506126D50>]}
+[0m16:05:01.144622 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m16:05:01.147814 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_second_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m16:05:01.314322 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.unique_my_first_dbt_model_id.16e066b321' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m16:05:01.316542 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.not_null_my_first_dbt_model_id.5fb22c2710' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m16:05:01.317550 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.unique_my_second_dbt_model_id.57a0f8c493' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m16:05:01.318557 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.not_null_my_second_dbt_model_id.151b76d778' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m16:05:01.352275 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.fetch_data_analyst_take_home.staging
+- models.fetch_data_analyst_take_home.marts
+- models.fetch_data_analyst_take_home.int
+[0m16:05:01.359321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027506280140>]}
+[0m16:05:01.375373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275063CA0C0>]}
+[0m16:05:01.375373 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m16:05:01.376400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '127fc557-41eb-43d2-a1aa-575fa2c5b61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275060DBB90>]}
+[0m16:05:01.378400 [info ] [MainThread]: 
+[0m16:05:01.378944 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:05:01.380443 [debug] [MainThread]: Command end result
+[0m16:05:01.390922 [debug] [MainThread]: Command `dbt compile` succeeded at 16:05:01.389885 after 2.52 seconds
+[0m16:05:01.392005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275056EE720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275053A9430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275051CEC60>]}
+[0m16:05:01.392513 [debug] [MainThread]: Flushing usage events
+[0m16:20:52.821067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404CA3C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404C7F76B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404CA3D5E0>]}
+
+
+============================== 16:20:52.827693 | 92dc9197-cea0-4658-9b8f-97ee9f3cc296 ==============================
+[0m16:20:52.827693 [info ] [MainThread]: Running with dbt=1.7.18
+[0m16:20:52.829661 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Graduate\\Documents\\Fetch-DA-Take-Home\\Fetch-Data-Analyst-Take-Home\\logs', 'profiles_dir': 'C:\\Users\\Graduate\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:53.105245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404CA94680>]}
+[0m16:20:53.164263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D20A120>]}
+[0m16:20:53.166266 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m16:20:53.176322 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m16:20:53.186301 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:20:53.187807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D46B5F0>]}
+[0m16:20:54.014612 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m16:20:54.016606 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_second_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m16:20:54.143953 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.unique_my_first_dbt_model_id.16e066b321' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m16:20:54.144588 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.not_null_my_first_dbt_model_id.5fb22c2710' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m16:20:54.145985 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.unique_my_second_dbt_model_id.57a0f8c493' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m16:20:54.146992 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.fetch_data_analyst_take_home.not_null_my_second_dbt_model_id.151b76d778' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m16:20:54.172537 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.marts
+- models.int
+- models.staging
+[0m16:20:54.178624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D4EC2F0>]}
+[0m16:20:54.192061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D4677A0>]}
+[0m16:20:54.193021 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 375 macros, 0 groups, 0 semantic models
+[0m16:20:54.194021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92dc9197-cea0-4658-9b8f-97ee9f3cc296', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D472AB0>]}
+[0m16:20:54.197085 [info ] [MainThread]: 
+[0m16:20:54.198257 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:20:54.199269 [debug] [MainThread]: Command end result
+[0m16:20:54.207627 [debug] [MainThread]: Command `dbt compile` succeeded at 16:20:54.206632 after 1.80 seconds
+[0m16:20:54.207627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D442720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404D268620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002404CA682F0>]}
+[0m16:20:54.208624 [debug] [MainThread]: Flushing usage events

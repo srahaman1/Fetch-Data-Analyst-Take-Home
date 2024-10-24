@@ -9,7 +9,7 @@ dbt-cloud:
     project-id: 384419
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: 'Fetch_Data_Analyst_Take_Home'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -38,11 +38,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  fetch_data_analyst_take_home:
-    # Applies to all files under models/example/
-    staging:
-      +materialized: table
-    int:
-      +materialized: table
-    marts:
-      +materialized: table
+  # Applies to all files under models/
+  staging:
+    +materialized: table
+  int:
+    +materialized: table
+  marts:
+    +materialized: table
